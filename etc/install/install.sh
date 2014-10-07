@@ -26,9 +26,9 @@ export LC_ALL=en_GB.UTF-8
 # Install essential packages from Apt
 apt-get update -y
 # Python dev packages
-apt-get install -y build-essential python3.4 python3.4-dev
+apt-get install -y build-essential python3.4 python3.4-dev python-dev
 # python-setuptools being installed manually
-wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python
+wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python3
 # Dependencies for image processing with Pillow (drop-in replacement for PIL)
 # supporting: jpeg, tiff, png, freetype, littlecms
 # (pip install pillow to get pillow itself, it is not in requirements.txt)
