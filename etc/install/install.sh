@@ -26,7 +26,7 @@ export LC_ALL=en_GB.UTF-8
 # Install essential packages from Apt
 apt-get update -y
 # Python dev packages
-apt-get install -y build-essential python python-dev
+apt-get install -y build-essential python3.4 python3.4-dev
 # python-setuptools being installed manually
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python
 # Dependencies for image processing with Pillow (drop-in replacement for PIL)

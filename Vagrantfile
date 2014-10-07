@@ -31,4 +31,6 @@ Vagrant::Config.run do |config|
 	
 	# Enable provisioning with a shell script.
 	config.vm.provision :shell, :path => "etc/install/install.sh", :args => "{{ project_name }}"
+	
+	config.vm.hostname "vagrant-{{ project_name }}"
 end
