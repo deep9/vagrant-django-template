@@ -1,14 +1,14 @@
 vagrant-django-template
 =======================
 
-A template for new Django 1.6 projects developed under Vagrant. Features offered include:
+A template for new Django 1.7 projects developed under Vagrant. Features offered include:
 
 * A Vagrantfile for building an Ubuntu Precise based VM
 * A virtualenv (configured to be active on login), with project dependencies managed through a requirements.txt file
 * A PostgreSQL database (with the same name as the project, pre-configured in the project settings file)
 * Separation of configuration settings into base.py, dev.py and production.py (and optionally local.py, kept outside
   of version control) as per http://www.sparklewise.com/django-settings-for-production-and-development-best-practices/
-* South, django-devserver, django-compressor, django-debug-toolbar out of the box
+* django-devserver, django-compressor, django-debug-toolbar out of the box
 * A boilerplate base template with jquery included, and various other ideas and best practices borrowed from https://github.com/h5bp/html5-boilerplate
 
 Setup
@@ -19,7 +19,7 @@ new ones.)
 
 To start a new project, run the following commands:
 
-    django-admin.py startproject --template https://github.com/torchbox/vagrant-django-template/zipball/master --name=Vagrantfile myproject
+    django-admin.py startproject --template https://github.com/deep9/vagrant-django-template/zipball/master --name=Vagrantfile myproject
     cd myproject
     vagrant up
     vagrant ssh
